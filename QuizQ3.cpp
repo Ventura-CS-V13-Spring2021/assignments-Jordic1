@@ -13,6 +13,12 @@ int main()
   {
       cout<<"Your ranges do not lie within the bounds.";
   }
-
+  
+  if(lowerRange == upperRange)
+  {
+    cout<<"These numbers are duplicated"<<endl;
+    cout<<lowerRange<<endl;
+    cout<<upperRange<<endl;
+  }
   
 }
