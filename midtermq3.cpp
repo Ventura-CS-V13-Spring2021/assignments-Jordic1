@@ -9,21 +9,21 @@ int difference;
 int main()
 {
     int num1,num2,num3;
-    getRdnum();
+    getRdnum(void);
     num1 = randint;
-    getRdnum();
+    getRdnum(void);
     num2 = randint;
-    getRdnum();
+    getRdnum(void);
     num3 = randint;
     
     findMax(num1, num2, num3);
     findMin(num1, num2, num3);
-    getDifference();
-    fileWrite();
+    getDifference(void);
+    fileWrite(void);
     
 }
 
-getRdnum()
+getRdnum(void)
 {
     randint = rand()%10;
 }
@@ -58,13 +58,13 @@ findMax(int n1, int n2, int n3)
     cout<<"The max is : "<< max << endl;
 }
 
-getDifference()
+getDifference(void)
 {
     difference = (max - min);
     cout<<"The difference is : "<< difference << endl;
 }
 
-fileWrite()
+fileWrite(void)
 {
   ofstream myfile;
   myfile.open ("question3.txt");
