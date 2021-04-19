@@ -23,12 +23,12 @@ int main()
     
 }
 
-getRdnum(void)
+int getRdnum(void)
 {
     randint = rand()%10;
 }
 
-findMin(int n1, int n2, int n3)
+void findMin(int n1, int n2, int n3)
 {
     if(n1<n2 && n1<n3)
     {
@@ -43,7 +43,7 @@ findMin(int n1, int n2, int n3)
     cout<<"The min is "<< min << endl;
 }
 
-findMax(int n1, int n2, int n3)
+void findMax(int n1, int n2, int n3)
 {
     if(n1>n2 && n1>n3)
     {
@@ -58,13 +58,13 @@ findMax(int n1, int n2, int n3)
     cout<<"The max is : "<< max << endl;
 }
 
-getDifference(void)
+void getDifference(void)
 {
     difference = (max - min);
     cout<<"The difference is : "<< difference << endl;
 }
 
-fileWrite(void)
+void fileWrite(void)
 {
   ofstream myfile;
   myfile.open ("question3.txt");
