@@ -11,7 +11,7 @@ int studentcount = 0;
 int main()
 {
 
-    
+    fileread();
 
 }
 
