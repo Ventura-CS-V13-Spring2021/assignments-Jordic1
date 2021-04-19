@@ -24,8 +24,7 @@ int main()
        }else{
            
        
-       getRdnum();
-       tmp1 = randint;
+       tmp1 = tmp2;
        getRdnum();
        tmp2 = randint;
        if(isGreater(tmp1)==1)
