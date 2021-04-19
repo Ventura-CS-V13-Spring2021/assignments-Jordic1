@@ -8,8 +8,32 @@ int tmp1, tmp2;
 int main()
 {
     
-    fileWrite();
-    
+    for(int i =0; i<numOfNums; i++)
+    {
+       if(i==0)
+       {
+             getRdnum();
+             tmp1 = randint;
+             getRdnum();
+            tmp2 = randint;
+            if(isGreater(tmp1)==1)
+       {
+           fileWrite();
+       }
+       
+       }else{
+           
+       
+       getRdnum();
+       tmp1 = randint;
+       getRdnum();
+       tmp2 = randint;
+       if(isGreater(tmp1)==1)
+       {
+           fileWrite();
+       }
+    }
+    }
 }
 
 int getRdnum(void)
@@ -19,11 +43,22 @@ int getRdnum(void)
 
 int isGreater(int n)
 {
-    for(int i =0; i<numOfNums; i++)
+
+    if(n>tmp2)
     {
-       getRdnum();
-       tmp1 = randint;
-       getRdnum();
-       tmp2 = randint;
+        return 1;
     }
+    else
+    {
+        return 0;
+    }
+
+}
+
+fileWrite()
+{
+  ofstream myfile;
+  myfile.open ("numbers.txt");
+  myfile <<tmp1<<endl;
+  myfile.close();
 }
