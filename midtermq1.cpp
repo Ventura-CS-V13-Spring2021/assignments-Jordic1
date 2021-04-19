@@ -4,8 +4,10 @@ using namespace std;
 std::ifstream infile("students.txt");
 int count = 1;
 int a,b;
+str x;
 double avg;
 int sum;
+int studentcount = 0;
 int main()
 {
 
@@ -28,12 +30,22 @@ void fileRead(void)
             average(a,b);
             
             cout<<" Score 1 : "<< a << " Score 2 : " << b << " Sum : " << sum << " Average : " << avg << endl;
+            if(avg > 80)
+            {
+                studentcount += 1;
+            }
         }
     }else
     {
-        println;
+       while(infile>>x)
+        {
+
+            
+            cout<<"Student name : "<< x;
+        }
     }
   }
+  cout<<"The total number of students who has the average > 80 : "<< studentcount << " Students " << endl;
   myfile.close();
 }
 int summation(int n1, int n2)
