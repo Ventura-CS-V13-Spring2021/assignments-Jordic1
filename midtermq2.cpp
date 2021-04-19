@@ -8,7 +8,7 @@ int tmp1, tmp2;
 int main()
 {
     
-    for(int i =0; i<numOfNums; i++)
+    for(int i =0; i<numOfNum; i++)
     {
        if(i==0)
        {
