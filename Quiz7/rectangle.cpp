@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 Coordinate Rectangle::getLB()const{
   return lb;
