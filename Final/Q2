@@ -5,6 +5,20 @@ int main()
 {
   int arr[] = {-12,3,-12,4,1,1,-12,1,-1,1,2,3,4,2,3,-12};
 
+  int temp;
+
   int length = sizeof(arr)/sizeof(arr[0]);
 
+  for (int i = 0; i < length; i++)
+  {
+    for(int j = i + 1; j < length; j++)
+    {
+      if (arr[i] < arr[j])
+      {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
 }
