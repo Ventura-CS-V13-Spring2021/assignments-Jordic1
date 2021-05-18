@@ -26,6 +26,15 @@ int main(){
     newArr[i] = count;
     i++;
   }
-  int lim
+  int lim = 0;
+  int element = 0;
 
+  for (int i = 0; i < lengthNewArr; i++)
+  {
+    if (newArr[i]> limit)
+    {
+      lim = newArr[i];
+      element = i;
+    }
+  }
 }
