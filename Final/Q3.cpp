@@ -32,4 +32,15 @@ public:
       classList[i] = rhs.classList[i];
     }
   }
+
+void Student::output()
+{
+  cout<<"Name : " << name << endl;
+  cout<<"Classes number : " << endl;
+  for (int i = 0; i < numClasses; i++)
+  {
+    cout << classList[i]<<endl;
+  }
+}
+
 }
