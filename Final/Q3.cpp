@@ -58,12 +58,34 @@ void Student::setName(string s)
 {
   name = s;
 }
-void Student::getName()
+string Student::getName()
 {
 return name;
+}
+void Student::setNumClasses(int n)
+{
+  numClasses = n;
+}
+int Student::getNumClasses()
+{
+  return numClasses;
+}
+Student operator=(const Student& rhs)
+{
+  name = rhs.name;
+  classList = new string[numClasses];
+  numClasses = rhs.numClasses;
+  for(int i = 0; i < numClasses; i++)
+  {
+    classList[i] = rhs.classList[i];
+  }
+  return Student;
 }
 int main()
 {
   Student s1;
+  s1.setName("CHATA");
+  s1.setNumClasses(45);
+  s1.output;
 }
 }
