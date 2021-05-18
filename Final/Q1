@@ -1,0 +1,13 @@
+#include <iostream>
+#include <array>
+
+using namespace std;
+
+int main(){
+  int arr[6] = {1,2,4,6,10,24};
+  int length = sizeof(arr)/sizeof(arr[0]);
+  int newArr[length];
+  int lengthNewArr = sizeof(newArr)/sizeof(newArr[0]);
+
+  
+}
