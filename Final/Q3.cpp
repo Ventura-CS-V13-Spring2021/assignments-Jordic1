@@ -42,5 +42,28 @@ void Student::output()
     cout << classList[i]<<endl;
   }
 }
-
+void Student::classesReset()
+{
+  numClasses = 0;
+  delete[] classlist;
+}
+void Student::input()
+{
+  cout<<"Enter name : "<<;
+  cin>>name;
+  cout<<"Enter number of classes";
+  cin>>numClasses;
+}
+void Student::setName(string s)
+{
+  name = s;
+}
+void Student::getName()
+{
+return name;
+}
+int main()
+{
+  Student s1;
+}
 }
