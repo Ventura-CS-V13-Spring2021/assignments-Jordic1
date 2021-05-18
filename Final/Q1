@@ -16,14 +16,14 @@ int main(){
     int j = 1;
     while(j < length)
     {
-      if (arr[i] % arr[j] = 0)
+      if (arr[i] % arr[j] == 0)
       {
         counter++;
 
       }
       j++;
     }
-    newArr[i] = count;
+    newArr[i] = counter;
     i++;
   }
   int lim = 0;
@@ -31,10 +31,10 @@ int main(){
 
   for (int i = 0; i < lengthNewArr; i++)
   {
-    if (newArr[i]> limit)
+    if (newArr[i]> lim)
     {
       lim = newArr[i];
       element = i;
     }
   }
-}
+  cout<< " The Element" << arr[element]<< " is the element with the most number of divisible values : " << lim;
